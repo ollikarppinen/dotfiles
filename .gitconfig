@@ -18,6 +18,8 @@
 
 	# Use custom `.gitignore` and `.gitattributes`
 	excludesfile = ~/.gitignore_global
+	commentchar = ";"
+	editor = vim 
 	# attributesfile = ~/.gitattributes
 
 [color]
@@ -59,5 +61,5 @@
 
   rebase = true
 [user]
-	email = ollikarppinen@gmail.com
+	email = olli.karppinen@relex.fi
 	name = Olli Karppinen
