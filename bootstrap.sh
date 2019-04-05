@@ -12,6 +12,7 @@ ln -s ${BASEDIR}/runcom/.inputrc ~/.inputrc
 
 # system
 ln -s ${BASEDIR}/system/.aliases ~/.aliases
+ln -s ${BASEDIR}/system/.env ~/.env
 
 # vim
 ln -s ${BASEDIR}/vim/.vim ~/.vim
