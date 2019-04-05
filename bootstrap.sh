@@ -8,6 +8,7 @@ ln -s ${BASEDIR}/git/.gitignore_global ~/.gitignore_global
 
 # runcom
 ln -s ${BASEDIR}/runcom/.bash_prompt ~/.bash_prompt
+ln -s ${BASEDIR}/runcom/.inputrc ~/.inputrc
 
 # system
 ln -s ${BASEDIR}/system/.aliases ~/.aliases
