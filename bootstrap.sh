@@ -2,28 +2,24 @@
 
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# vim
-# ln -s ${BASEDIR}/vimrc ~/.vimrc
-# ln -s ${BASEDIR}/vim/ ~/.vim
-
-# zsh
-# ln -s ${BASEDIR}/zshrc ~/.zshrc
-
 # git
-ln -s ${BASEDIR}/.gitconfig ~/.gitconfig
-ln -s ${BASEDIR}/.gitignore_global ~/.gitignore_global
+ln -s ${BASEDIR}/git/.gitconfig ~/.gitconfig
+ln -s ${BASEDIR}/git/.gitignore_global ~/.gitignore_global
 
-# init folder for iTerm2 themes
-# ln -s ${BASEDIR}/init ~/init
+# runcom
+ln -s ${BASEDIR}/runcom/.bash_prompt ~/.bash_prompt
 
-# bash files
-ln -s ${BASEDIR}/.bash_profile ~/.dotfiles_bash_profile
-ln -s ${BASEDIR}/.bash_prompt ~/.bash_prompt
-ln -s ${BASEDIR}/.aliases ~/.aliases
+# system
+ln -s ${BASEDIR}/system/.aliases ~/.aliases
 
-# Vim
-ln -s ${BASEDIR}/.vim ~/.vim
-ln -s ${BASEDIR}/.vimrc ~/.vimrc
+# vim
+ln -s ${BASEDIR}/vim/.vim ~/.vim
+ln -s ${BASEDIR}/vim/.vimrc ~/.vimrc
+
+# tmux
+ln -s ${BASEDIR}/tmux/.tmux.conf ~/.tmux.conf
+ln -s ${BASEDIR}/tmux/.tmux ~/.tmux
 
 echo "# Added by dotfiles ${BASEDIR}/bootstrap.sh" >> ~/.bash_profile
-echo "source ${BASEDIR}/.bash_profile" >> ~/.bash_profile
+echo "source ${BASEDIR}/runcom/.bash_profile" >> ~/.bash_profile
+
