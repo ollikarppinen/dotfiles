@@ -23,5 +23,5 @@ ln -s ${BASEDIR}/tmux/.tmux.conf ~/.tmux.conf
 ln -s ${BASEDIR}/tmux/.tmux ~/.tmux
 
 echo "# Added by dotfiles ${BASEDIR}/bootstrap.sh" >> ~/.bash_profile
-echo "source ${BASEDIR}/runcom/.bash_profile" >> ~/.bash_profile
+echo "source ${BASEDIR}/runcom/.bash_profile" >> ~/.bashrc
 
